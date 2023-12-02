@@ -18,3 +18,4 @@ Końcowa ocena będzie wypadkową oceny:
 - z kolokwium, które jest zaplanowane na przedostatnie zajęcia w semstrze
 - z 6-ciu kolejnych "wejściówek" (termin pierwszej zostanie podany w trakcie zajęć)
 - rozwiązań (i terminowości ich oddawania) zadań przekazywanych studentom w trakcie zajęć
+i
