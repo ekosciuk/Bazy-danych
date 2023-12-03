@@ -1,5 +1,5 @@
 # Bazy danych
-
+Zadania tu przedstawione zostały wykonane na podstawie tego pliku: https://github.com/kropiak/bazy_inf/blob/573cc6a82dde109acd27761d9c15a86a53e7661e/lab_04/lab_04.pdf
 
 ##  Zadanie 1.
 **a) Treść zadania:**
