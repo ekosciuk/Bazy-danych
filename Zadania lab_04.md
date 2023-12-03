@@ -129,10 +129,23 @@ Dodanie pola funkcja do tabeli postac:
 ~~~mysql
 ALTER TABLE postac ADD COLUMN funkcja VARCHAR(255);
 ~~~
+Ustawianie Bjorna jako kapitana:
+~~~mysql
+UPDATE postac SET funkcja = 'kapitan' WHERE id_postaci = 1;
+~~~
+Dodanie klucza obcego w tabeli postac, który odwołuje się do statku:
+~~~mysql
+ALTER TABLE postac ADD COLUMN statek VARCHAR(40);
+ALTER TABLE postac ADD FOREIGN KEY(statek) REFERENCES statek(nazwa_statku);
+~~~
 Przypisanie wikingów oraz Drozda do statków:
 ~~~mysql
-UPDATE postac SET id_statku = 'Rębacz' WHERE rodzaj = 'wiking';
-UPDATE postac SET id_statku = 'Krwiożerca' WHERE nazwa = 'Drozd';
+UPDATE postac SET id_statku = 'Rębacz' WHERE id_postaci = 1;
+UPDATE postac SET id_statku = 'Krwiożerca' WHERE id_postaci = 2;
+UPDATE postac SET id_statku = 'Rębacz' WHERE id_postaci = 4;
+UPDATE postac SET id_statku = 'Krwiożerca' WHERE id_postaci = 5;
+UPDATE postac SET id_statku = 'Rębacz' WHERE id_postaci = 6;
+UPDATE postac SET id_statku = 'Krwiozerca' WHERE id_postaci = 7;
 ~~~
 Usunięcie izby spiżarnia z tabeli izba:
 ~~~mysql
