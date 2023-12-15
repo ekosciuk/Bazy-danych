@@ -110,7 +110,7 @@ liczba.
 
 Wysadzanie:
 ~~~mysql
-UPDATE postac SET id_statku = NULL;
+UPDATE postac SET statek = NULL;
 ~~~
 Uśmiercanie jednego wikinga:
 ~~~mysql
