@@ -81,8 +81,8 @@ wrzuć do tej tabeli wszystkie postacie które mają zdefiniowany statek.
 
 Dodawanie węża:
 ~~~mysql
-ALTER TABLE postac CHANGE rodzaj ENUM('wiking', 'ptak', 'kobieta', 'syrena', 'wąż') DEFAULT NULL;
-INSERT INTO postac VALUES(38294823493, 10, 'Loko', 'wąż', '1932-11-10', 100, DEFAULT, DEFAULT);
+ALTER TABLE postac CHANGE rodzaj rodzaj ENUM('wiking', 'ptak', 'kobieta', 'syrena', 'waz') DEFAULT NULL;
+INSERT INTO postac VALUES(38294823493, 10, 'Loko', 'waz', '1932-11-10', 100, DEFAULT, DEFAULT);
 ~~~
 Tworzenie tabeli marynarz:
 ~~~mysql
