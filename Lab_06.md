@@ -16,6 +16,7 @@ https://github.com/kropiak/bazy_inf/blob/fb2972e88237d661dbc8cf1b6816975838fe230
 
 Kopiowanie tabel z bazy 'wikingowie' do swojej bazy:
 ~~~~mysql
+CREATE TABLE kreatura AS SELECT * FROM wikingowie.kreatura;
 CREATE TABLE zasob AS SELECT * FROM wikingowie.zasob;
 CREATE TABLE ekwipunek AS SELECT * FROM wikingowie.ekwipunek;
 ~~~~
