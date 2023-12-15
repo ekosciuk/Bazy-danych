@@ -54,7 +54,7 @@ Wypisanie kolejnych etapów wszystkich wypraw wraz z nazwami sektorów, sortują
 daty początku wyprawy, a następnie według kolejności występowania etapów. W każdym
 etapie określ nazwę kierownika danej wyprawy:
 ~~~~mysql
-SELECT ew.idwyprawy, ew.dziennik, s.nazwa AS 'nazwa sektora', k.nazwa AS 'kierownik' FROM etapy_wyprawy ew INNER JOIN sektor s ON ew.sektor=s.id_sektora INNER JOIN wyprawa w ON ew.idwyprawy=w.id_wyprawy, INNER JOIN kreatura k on w.kierownik=k.idKreatury ORDER BY w.data_rozpoczecia ASC, ew.kolejnosc ASC;
+SELECT ew.idwyprawy, ew.dziennik, s.nazwa AS 'nazwa sektora', k.nazwa AS 'kierownik' FROM etapy_wyprawy ew INNER JOIN sektor s ON ew.sektor=s.id_sektora INNER JOIN wyprawa w ON ew.id_wyprawy=w.id_wyprawy, INNER JOIN kreatura k on ew.kierownik=k.idKreatury ORDER BY ew.data_rozpoczecia ASC, ew.kolejnosc ASC;
 ~~~~
 
 tu skończyłam, ale ostatni punkt nie działa!!!
