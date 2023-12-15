@@ -44,7 +44,7 @@ ALTER TABLE postac CHANGE rodzaj ENUM('wiking','ptak','kobieta','syrena') DEFAUL
 ~~~
 Wstawianie syreny:
 ~~~mysql
-INSERT INTO POSTAC VALUES(21029283299, 9, 'Gertruda Nieszczera', 'syrena', '1940-11-11', 14, DEFAULT, DEFAULT);
+INSERT INTO postac VALUES(21029283299, 9, 'Gertruda Nieszczera', 'syrena', '1940-11-11', 14, DEFAULT, DEFAULT);
 ~~~
 
 ## Zadanie 3.
