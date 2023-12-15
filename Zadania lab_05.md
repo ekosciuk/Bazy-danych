@@ -40,7 +40,7 @@ ALTER TABLE postac ADD PRIMARY KEY (pesel);
 ~~~
 Dodanie rodzaju syrena do tabeli postać:
 ~~~mysql
-ALTER TABLE postac CHANGE rodzaj ENUM('wiking','ptak','kobieta','syrena') DEFAULT NULL;
+ALTER TABLE postac CHANGE rodzaj rodzaj ENUM('wiking','ptak','kobieta','syrena') DEFAULT NULL;
 ~~~
 Wstawianie syreny:
 ~~~mysql
