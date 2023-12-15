@@ -122,10 +122,6 @@ ALTER TABLE marynarz DROP FOREIGN KEY marynarz_ibkf_1;
 DELETE FROM statek;
 ALTER TABLE postac DROP FOREIGN KEY postac_ibkf_1;
 DROP TABLE statek;
-~~~
-Usuwanie tabeli statek:
-~~~mysql
-DROP TABLE statek;
 ~~~~
 Tworzenie tabeli zwierz:
 ~~~mysql
