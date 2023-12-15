@@ -140,12 +140,12 @@ ALTER TABLE postac ADD FOREIGN KEY(statek) REFERENCES statek(nazwa_statku);
 ~~~
 Przypisanie wikingów oraz Drozda do statków:
 ~~~mysql
-UPDATE postac SET id_statku = 'Rębacz' WHERE id_postaci = 1;
-UPDATE postac SET id_statku = 'Krwiożerca' WHERE id_postaci = 2;
-UPDATE postac SET id_statku = 'Rębacz' WHERE id_postaci = 4;
-UPDATE postac SET id_statku = 'Krwiożerca' WHERE id_postaci = 5;
-UPDATE postac SET id_statku = 'Rębacz' WHERE id_postaci = 6;
-UPDATE postac SET id_statku = 'Krwiozerca' WHERE id_postaci = 7;
+UPDATE postac SET statek = 'Rębacz' WHERE id_postaci = 1;
+UPDATE postac SET statek = 'Krwiożerca' WHERE id_postaci = 2;
+UPDATE postac SET statek = 'Rębacz' WHERE id_postaci = 4;
+UPDATE postac SET statek = 'Krwiożerca' WHERE id_postaci = 5;
+UPDATE postac SET statek = 'Rębacz' WHERE id_postaci = 6;
+UPDATE postac SET statek = 'Krwiozerca' WHERE id_postaci = 7;
 ~~~
 Usunięcie izby spiżarnia z tabeli izba:
 ~~~mysql
