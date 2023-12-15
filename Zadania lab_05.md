@@ -114,7 +114,7 @@ UPDATE postac SET statek = NULL;
 ~~~
 Uśmiercanie jednego wikinga:
 ~~~mysql
-DELETE FROM postac WHERE rodzaj = 'wiking' LIMIT 1;
+DELETE FROM postac WHERE nazwa <> 'Bjorn' AND rodzaj ='wiking' ORDER BY data_ur ASC LIMIT 1;
 ~~~
 Niszczenie wszystkich statków:
 ~~~mysql
