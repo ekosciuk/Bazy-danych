@@ -118,8 +118,10 @@ DELETE FROM postac WHERE nazwa <> 'Bjorn' AND rodzaj ='wiking' ORDER BY data_ur 
 ~~~
 Niszczenie wszystkich statków:
 ~~~mysql
-UPDATE postac SET id_statku = NULL WHERE id_statku IS NOT NULL;
+ALTER TABLE marynarz DROP FOREIGN KEY marynarz_ibkf_1;
 DELETE FROM statek;
+ALTER TABLE postac DROP FOREIGN KEY postac_ibkf_1;
+DROP TABLE statek;
 ~~~
 Usuwanie tabeli statek:
 ~~~mysql
