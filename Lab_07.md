@@ -99,7 +99,7 @@ Wypisanie obok siebie nazwy kreatur, których numer idKreatury różni się o 5 
 SELECT CONCAT(k1.nazwa,'-', k2.nazwa) FROM kreatura k1 INNER JOIN kreatura k2 WHERE k1.idKreatury - k2.idKreatury = 5;
 ~~~~
 
-##Zadanie 5.
+## Zadanie 5.
 
 **a) Treść zadania:**
 
